@@ -1,0 +1,23 @@
+/* STYLE FOR LEFT MENU' */
+#contact{
+    width: 100%;
+    height: 100%;
+}
+
+#contact>header{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+#contact>nav{
+    height: 80px;
+    width: 100%;
+    background-color: yellow;
+}
+
+#contact>main{
+    height: 470px;
+    width: 100%;
+    background-color: black;
+}

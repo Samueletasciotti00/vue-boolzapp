@@ -1,0 +1,38 @@
+/* Default Settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+}
+
+/* Container / App */
+#app{
+    width: 100%;
+    height: 100%;
+    /* Flex */
+    display: flex;
+}
+
+#container{
+    border: 1px solid red;
+    width: 80%;
+    margin: 50px auto;
+    /* DEBUG */
+    height: 600px;
+}
+
+#left-menu{
+    border: 1px solid red;
+    width: 35%;
+    height: 100%;
+}
+
+#right-menu{
+    border: 1px solid blue;
+    width: 65%;
+    height: 100%;
+}

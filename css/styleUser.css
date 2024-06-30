@@ -33,7 +33,6 @@
 #contact>main{
     height: 470px;
     width: 100%;
-    background-color: black;
 }
 
 /* NAV bar and users */
@@ -89,7 +88,6 @@ div > .fa-regular.fa-bell-slash{
 /* Find settings */
 #find{
     background-color: #eaeaea;
-    height: 100%;
     padding: 5px;
 }
 
@@ -102,4 +100,32 @@ div > .fa-regular.fa-bell-slash{
 
 #find > input{
     width: 95%;
+}
+
+
+
+
+/* LISTA UTENTI SETTINGS */
+#lista_utenti{
+    list-style: none;
+}
+
+/* UTENTE */
+.utente{
+    height: 60px;
+    width: 100%;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 10px;
+
+    /* Flex */
+    display: flex;
+    gap: 10px;
+}
+
+.utente_img{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 1600px;
 }

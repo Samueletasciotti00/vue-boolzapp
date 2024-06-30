@@ -28,7 +28,6 @@
 #contact>nav{
     height: 80px;
     width: 100%;
-    background-color: yellow;
 }
 
 #contact>main{
@@ -51,5 +50,56 @@
 .buttons{
     width: 60px;
     height: 30px;
-    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Notice and Find Users */
+#notice{
+    background-color: #8edafc;
+    width: 100%;
+    height: 60%;
+}
+
+/* Silence icon */
+div > .fa-regular.fa-bell-slash{
+        background-color: #ffffff;
+        color: #8edafc;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;  
+}
+
+/* Notice span msg */
+#notice span{
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Notice float left */
+#notice > div{
+    display: flex;
+}
+
+/* Find settings */
+#find{
+    background-color: #eaeaea;
+    height: 100%;
+    padding: 5px;
+}
+
+
+#find > div{
+    background-color: white;
+    width: 20px;
+    display: inline-block;
+}
+
+#find > input{
+    width: 95%;
 }

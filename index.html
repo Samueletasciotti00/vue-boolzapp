@@ -75,7 +75,7 @@
                     <!-- Contatti -->
                     <main>
                         <ul id="lista_utenti">
-                            <li v-for="(contact, index) in filteredContacts" :key="index" class="utente" @click="addFocusClass">
+                            <li v-for="(contact, index) in filteredContacts" :key="index" class="utente">
 
                                 <!-- IMMAGINE DELL UTENTE -->
                                 <div class="utente_img"><img :src="contact.avatar" alt=""></div>
@@ -117,13 +117,14 @@
                     <!-- Menu di conversazione -->
                     <main>
 
-                        <!-- Msg Ricevuti -->
-                        <div class="text_left">
-                            <span></span>
+                        <!-- MESSAGGI -->
+                        <div id="container_msg">
+
+                            
+                            <div v-for="(message, index) in contacts[0].messages" :key="index" class="text_left" :class="{'text_right': message.status === 'sent', 'text_left': message.status === 'received'}">{{message.message}}</div>
+                        
                         </div>
-        
-                        <!-- Msg Inviati -->
-                        <div class="text_right"></div>
+                            
                     </main>
 
                     <!-- Barra di messaggio -->

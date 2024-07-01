@@ -78,7 +78,7 @@
                             <li v-for="(contact, index) in filteredContacts" :key="index" class="utente">
 
                                 <!-- IMMAGINE DELL UTENTE -->
-                                <div class="utente_img" :style="{ backgroundImage: `url(${contact.avatar})` }"></div>
+                                <div class="utente_img"><img :src="contact.avatar" alt=""></div>
 
                                 <!-- DESCRIZIONE INFO -->
                                 <div>

@@ -6,8 +6,8 @@ createApp({
       searchQuery: '',
       contacts: [
         {
-          name: 'Michele',
-          avatar: './img/avatar_1.png',
+          name: 'Ciro',
+          avatar: 'img/ciro.jpeg',
           visible: true,
           messages: [
             {
@@ -28,8 +28,8 @@ createApp({
           ],
         },
         {
-          name: 'Fabio',
-          avatar: './img/avatar_2.png',
+          name: 'Lotito',
+          avatar: 'img/Lotito.jpg',
           visible: true,
           messages: [
             {
@@ -50,8 +50,8 @@ createApp({
           ],
         },
         {
-          name: 'Samuele',
-          avatar: './img/avatar_3.png',
+          name: 'Sandro Nesta',
+          avatar: 'img/Alessandro-Nesta.jpg',
           visible: true,
           messages: [
             {
@@ -72,8 +72,8 @@ createApp({
           ],
         },
         {
-          name: 'Alessandro B.',
-          avatar: './img/avatar_4.png',
+          name: 'Veron',
+          avatar: 'img/Veron.jpg',
           visible: true,
           messages: [
             {
@@ -89,8 +89,8 @@ createApp({
           ],
         },
         {
-          name: 'Alessandro L.',
-          avatar: './img/avatar_5.png',
+          name: 'Giorgio Chinaglia',
+          avatar: 'img/Giorgio Chinaglia.jpg',
           visible: true,
           messages: [
             {
@@ -106,8 +106,8 @@ createApp({
           ],
         },
         {
-          name: 'Claudia',
-          avatar: './img/avatar_6.png',
+          name: 'Beppe Signori',
+          avatar: 'img/Signori.webp',
           visible: true,
           messages: [
             {
@@ -128,8 +128,8 @@ createApp({
           ],
         },
         {
-          name: 'Federico',
-          avatar: './img/avatar_7.png',
+          name: 'Peruzzi',
+          avatar: 'img/Peruzzi.jpg',
           visible: true,
           messages: [
             {
@@ -145,8 +145,8 @@ createApp({
           ],
         },
         {
-          name: 'Davide',
-          avatar: './img/avatar_8.png',
+          name: 'Simeone',
+          avatar: 'img/Simeone.jpg',
           visible: true,
           messages: [
             {

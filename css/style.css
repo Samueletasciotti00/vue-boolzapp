@@ -36,3 +36,15 @@ body{
     width: 65%;
     height: 100%;
 }
+
+.utente_img{
+    display: flex;
+    justify-content: center;
+    overflow: hidden
+}
+
+.utente_img img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}

@@ -1,0 +1,17 @@
+// stateClass() ==>
+
+// Dichiarare un array per gli indici degli utenti;
+        let indiceUser = [];
+
+        console.log(indiceUser);
+
+        // Distingure gli utenti 
+        for(let i = 0; i < this.contacts.length; i++){
+            
+            // Inserisco tutti i nomi dell'elenco in un array
+            indiceUser.push(this.contacts[i].name);
+             
+        }
+
+        // Inserire al click il numero dell'indice nell'array;
+        console.log(indiceUser);

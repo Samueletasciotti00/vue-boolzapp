@@ -75,7 +75,7 @@
                     <!-- Contatti -->
                     <main>
                         <ul id="lista_utenti">
-                            <li v-for="(contact, index) in filteredContacts" :key="index" class="utente">
+                            <li v-for="(contact, index) in filteredContacts" :key="index" class="utente" @click="stateClass(index)">
 
                                 <!-- IMMAGINE DELL UTENTE -->
                                 <div class="utente_img"><img :src="contact.avatar" alt=""></div>
@@ -121,7 +121,7 @@
                         <div id="container_msg">
 
                             
-                            <div v-for="(message, index) in contacts[0].messages" :key="index" class="text_left" :class="{'text_right': message.status === 'sent', 'text_left': message.status === 'received'}">{{message.message}}</div>
+                            <div v-for="(message, index) in contacts[liveStatus].messages" :key="index" class="text_left" :class="{'text_right': message.status === 'sent', 'text_left': message.status === 'received'}">{{message.message}}</div>
                         
                         </div>
                             

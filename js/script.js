@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      liveStatus: 0,  
       searchQuery: '',
       contacts: [
         {
@@ -177,5 +178,15 @@ createApp({
         contact.name.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
     }
+    
+  },
+  methods:{
+
+    // Passo l'argomento index corrispondente all'utente, in base ad esso si aggiornerà la chat visualizzabile a schermo.
+    stateClass(index){
+        
+        // Cambio conversazione; 
+        this.liveStatus = index;
+    }   
   }
 }).mount('#app');

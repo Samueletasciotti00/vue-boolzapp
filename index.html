@@ -75,7 +75,7 @@
                     <!-- Contatti -->
                     <main>
                         <ul id="lista_utenti">
-                            <li v-for="(contact, index) in filteredContacts" :key="index" class="utente">
+                            <li v-for="(contact, index) in filteredContacts" :key="index" class="utente" @click="addFocusClass">
 
                                 <!-- IMMAGINE DELL UTENTE -->
                                 <div class="utente_img"><img :src="contact.avatar" alt=""></div>
@@ -118,8 +118,10 @@
                     <main>
 
                         <!-- Msg Ricevuti -->
-                        <div class="text_left"></div>
-                        <div class="text_left"></div>
+                        <div class="text_left">
+                            <span></span>
+                        </div>
+        
                         <!-- Msg Inviati -->
                         <div class="text_right"></div>
                     </main>

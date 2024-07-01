@@ -169,9 +169,11 @@ createApp({
       ]
     }
   },
-  computed: {
+  computed: {  //Filtro per nomi contatti;
     filteredContacts() {
-      return this.contacts.filter(contact => 
+      
+      //Ritorna un valore fitrato;  
+      return this.contacts.filter(contact => //Crea un indice (Contact) tra (Contacts); 
         contact.name.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
     }

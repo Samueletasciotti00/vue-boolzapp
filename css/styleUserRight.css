@@ -15,6 +15,7 @@
 #message-menu main{
     width: 100%;
     min-height: 700px;
+    padding: 20px;
     /* DEBUG */
     background-color: black;
 }
@@ -25,4 +26,37 @@
     height: 50px;
     background-color: #eaeaea;
     padding: 15px; 
+
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* MSG BAR Input */
+#msg_bar input{
+    width: 700px;
+    height: 30px;
+}
+
+
+
+/* CHAT DI CONVERSAZIONE */
+.text_left{
+    min-height: 70px;
+    min-width: 20%;
+    max-width: 40%;
+    margin-left: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+}   
+
+.text_right{
+    min-height: 70px;
+    min-width: 20%;
+    max-width: 40%;
+    margin-left: 58%;
+    background-color: #d5f9ba;
+    border-radius: 10px;
 }

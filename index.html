@@ -138,7 +138,7 @@
 
                         <!-- Send Msg -->
                         
-                        <div v-if=""><i class="fa-regular fa-circle-play" style="color: #63E6BE; font-size: 40px;" @click="sendMessage"></i></div>
+                        <div v-if=""><i class="fa-regular fa-circle-play" style="color: #63E6BE; font-size: 40px;" @click="sendMessage" :keyup="space"></i></div>
 
                         <div v-else="this.testo === '' "><i style="color: #bebebe;" class="fa-solid fa-microphone"></i></div>
                     </div>

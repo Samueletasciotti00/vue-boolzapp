@@ -202,6 +202,9 @@ createApp({
             
             // Rimozione del contenuto della barra
             testoRemove.value = '';
+
+            //Rispost dell'utente
+            this.contacts[this.liveStatus].messages.push({message: 'ok', status: 'received'});
         }
             
     }   

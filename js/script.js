@@ -187,6 +187,23 @@ createApp({
         
         // Cambio conversazione; 
         this.liveStatus = index;
+    },
+    sendMessage(){
+
+        // Variabile per rimozione testo;
+        let testoRemove = document.getElementById('barra');
+            
+        //Estrapolare il contenuto dell 'input bar
+        let testo = document.getElementById('barra').value;
+
+        if(testo !== ''){
+            // Pushare il messaggio nell'array di oggetti del messaggio;
+            this.contacts[this.liveStatus].messages.push({message: testo, status: 'sent'});
+            
+            // Rimozione del contenuto della barra
+            testoRemove.value = '';
+        }
+            
     }   
   }
 }).mount('#app');

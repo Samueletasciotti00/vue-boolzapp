@@ -14,10 +14,10 @@
 /* Main page for message */
 #message-menu main{
     width: 100%;
-    min-height: 700px;
+    height: 700px;
     padding: 20px;
-    /* DEBUG */
-    background-color: black;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    overflow-y: scroll;
 }
 
 /* MSG BAR */
@@ -43,20 +43,21 @@
 
 /* CHAT DI CONVERSAZIONE */
 .text_left{
-    min-height: 70px;
-    min-width: 20%;
-    max-width: 40%;
     margin-left: 20px;
     background-color: #ffffff;
     margin: 20px;
     border-radius: 10px;
+    width: max-content;
+    padding: 10px;
+    max-width: 45%;
 }   
 
 .text_right{
-    min-height: 70px;
-    min-width: 20%;
-    max-width: 40%;
-    margin-left: 58%;
+    margin-right: 20px;
     background-color: #d5f9ba;
     border-radius: 10px;
+    width: max-content;
+    padding: 10px;
+    margin-left: auto;
+    max-width: 45%;
 }

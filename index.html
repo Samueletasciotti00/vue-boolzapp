@@ -100,9 +100,9 @@
                     <header>
 
                          <!-- Img utente -->
-                         <div class="userImg"></div>
+                         <div class="userImg"> <img :src="contacts[liveStatus].avatar" alt=""></div>
                          <div class="name-user">
-                           Samuele
+                           {{contacts[liveStatus].name}}
                            <div>Blablablas</div>
                          </div>
                          
@@ -134,10 +134,13 @@
                         <div><i class="fa-regular fa-face-smile" style="color: black;"></i></div>
 
                         <!-- Msg bar text -->
-                        <div><input type="text"></div>
+                        <div><input id="barra" type="text"></div>
 
                         <!-- Send Msg -->
-                        <div><i class="fa-regular fa-circle-play" style="color: #63E6BE;"></i></div>
+                        
+                        <div v-if=""><i class="fa-regular fa-circle-play" style="color: #63E6BE; font-size: 40px;" @click="sendMessage"></i></div>
+
+                        <div v-else="this.testo === '' "><i style="color: #bebebe;" class="fa-solid fa-microphone"></i></div>
                     </div>
                 </div>
             </div>

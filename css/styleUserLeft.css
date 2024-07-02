@@ -46,6 +46,11 @@
     background-color: blueviolet;
 }
 
+.userImg img{
+    width: 100%;
+    height: 100%;
+}
+
 /* INTERACTION */
 .buttons{
     width: 60px;
